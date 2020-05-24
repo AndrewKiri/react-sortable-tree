@@ -16,6 +16,7 @@ class NodeRendererDefault extends Component {
       canDrag,
       node,
       title,
+      moveHandle,
       subtitle,
       draggedNode,
       path,
@@ -32,6 +33,7 @@ class NodeRendererDefault extends Component {
       rowDirection,
       ...otherProps
     } = this.props;
+    const nodeMoveHandle = moveHandle || node.moveHandle;
     const nodeTitle = title || node.title;
     const nodeSubtitle = subtitle || node.subtitle;
     const rowDirectionClass = rowDirection === 'rtl' ? 'rst__rtl' : null;
@@ -59,7 +61,7 @@ class NodeRendererDefault extends Component {
         );
       } else {
         // Show the handle used to initiate a drag-and-drop
-        handle = connectDragSource(<div className="rst__moveHandle" />, {
+        handle = connectDragSource(<div className="rst__moveHandle">{nodeMoveHandle}</div>, {
           dropEffect: 'copy',
         });
       }
