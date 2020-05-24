@@ -3,8 +3,8 @@
 </div>
 
 # Fork of React Sortable Tree
-## with additional configurability
-### published as react-sortable-tree-configurable
+### with additional configurability
+### published as `react-sortable-tree-configurable`
 
 ![NPM version](https://img.shields.io/npm/v/react-sortable-tree.svg?style=flat)
 ![NPM license](https://img.shields.io/npm/l/react-sortable-tree.svg?style=flat)
@@ -23,8 +23,8 @@
 ## Table of Contents
 
 - [Fork of React Sortable Tree](#fork-of-react-sortable-tree)
-  - [with additional configurability](#with-additional-configurability)
-    - [published as react-sortable-tree-configurable](#published-as-react-sortable-tree-configurable)
+    - [with additional configurability](#with-additional-configurability)
+    - [published as `react-sortable-tree-configurable`](#published-as-react-sortable-tree-configurable)
   - [Table of Contents](#table-of-contents)
   - [Getting started](#getting-started)
   - [Usage](#usage)
@@ -41,14 +41,14 @@
 
 ## Getting started
 
-Install `react-sortable-tree` using npm.
+Install `react-sortable-tree-configurable` using npm.
 
 ```sh
 # NPM
-npm install react-sortable-tree --save
+npm install react-sortable-tree-configurable --save
 
 # YARN
-yarn add react-sortable-tree
+yarn add react-sortable-tree-configurable
 ```
 
 ES6 and CommonJS builds are available with each distribution.
@@ -56,28 +56,28 @@ For example:
 
 ```js
 // This only needs to be done once; probably during your application's bootstrapping process.
-import 'react-sortable-tree/style.css';
+import 'react-sortable-tree-configurable/style.css';
 
 // You can import the default tree with dnd context
-import SortableTree from 'react-sortable-tree';
+import SortableTree from 'react-sortable-tree-configurable';
 
 // Or you can import the tree without the dnd context as a named export. eg
-import { SortableTreeWithoutDndContext as SortableTree } from 'react-sortable-tree';
+import { SortableTreeWithoutDndContext as SortableTree } from 'react-sortable-tree-configurable';
 
 // Importing from cjs (default)
-import SortableTree from 'react-sortable-tree/dist/index.cjs.js';
-import SortableTree from 'react-sortable-tree';
+import SortableTree from 'react-sortable-tree-configurable/dist/index.cjs.js';
+import SortableTree from 'react-sortable-tree-configurable';
 
 // Importing from esm
-import SortableTree from 'react-sortable-tree/dist/index.esm.js';
+import SortableTree from 'react-sortable-tree-configurable/dist/index.esm.js';
 ```
 
 ## Usage
 
 ```jsx
 import React, { Component } from 'react';
-import SortableTree from 'react-sortable-tree';
-import 'react-sortable-tree/style.css'; // This only needs to be imported once in your app
+import SortableTree from 'react-sortable-tree-configurable';
+import 'react-sortable-tree-configurable/style.css'; // This only needs to be imported once in your app
 
 export default class Tree extends Component {
   constructor(props) {
